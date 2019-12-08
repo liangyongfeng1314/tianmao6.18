@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      font-size: 62.5%;
+    }
+    ul li {
+      list-style-type: none;
+    }
+    input {
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+    button {
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    .border {
+      border: 1px solid red;
+    }
+    .displayFlex {
+      display: flex;
+      display: -webkit-flex;
+    }
+    #m_login {
+      height: 100%;
+      position: relative;
+      border: 1px solid red;
+    }
+    header {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      padding: 2%;
+      border: 1px solid red;
+      position: relative;
+      z-index: 19981218;
+    }
+    header span {
+      letter-spacing: 0.2rem;
+    }
+    header span:nth-of-type(1) {
+      position: absolute;
+      left: 2%;
+      top: 0;
+      z-index: 19981218;
+    }
+    header span:nth-of-type(2) {
+      position: absolute;
+      right: 2%;
+      top: 0;
+      cursor: pointer;
+      z-index: 19981218;
+    }
+    .login-items {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 15%;
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: wrap column;
+    }
+    .login-items .title {
+      text-align: center;
+      height: 25px;
+      line-height: 25px;
+      letter-spacing: 0.5rem;
+      font-size: 2rem;
+      margin-bottom: 3%;
+    }
+    .login-items label {
+      width: 100%;
+      padding: 5%;
+      letter-spacing: 0.3rem;
+      border-bottom: 1px solid red;
+    }
+    .login-items label:nth-of-type(2) {
+      margin-top: 20px;
+    }
+    .login-items button {
+      width: 100%;
+      height: 40px;
+      margin-top: 35px;
+      border: 1px solid red;
+      border-radius: 25px;
+    }
+    .login_entry {
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      padding: 4%;
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: wrap column;
+      font-size: 0.8rem;
+      border: 1px solid teal;
+    }
+    .login_entry div {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 5rem;
+      justify-items: center;
+      letter-spacing: 4rem;
+      border-bottom: 1px solid red;
+    }
+    .login_entry div:nth-of-type(1) {
+      letter-spacing: 2rem;
+    }
+    .login_entry div:nth-of-type(2) {
+      margin-top: 1%;
+      letter-spacing: 2rem;
+    }
+    .login_entry div:nth-of-type(3) {
+      margin-top: 1%;
+    }
+  </style>
+  <body>
+    <div id="m_login">
+      <header>
+        <span>考勤系统</span>
+        <span>
+          <v-touch v-on:tap="ejectLogin"> 更多角色</v-touch>
+        </span>
+      </header>
+      <div class="login-items">
+        <div class="title">学生</div>
+        <label>
+          <span>学号</span>:
+          <input type="text" placeholder="学号" autocomplete />
+        </label>
+        <label>
+          <span>姓名</span>:
+          <input type="text" placeholder="姓名" />
+        </label>
+        <button v-on:click="login()">登录</button>
+      </div>
+      <!--多角色登陆窗口-->
+      <div class="login_entry">
+        <div class="student_entry">学&nbsp;&nbsp;&nbsp;生</div>
+        <div class="teacher_entry">教&nbsp;&nbsp;&nbsp;师</div>
+        <div class="tutor_entry">辅导员</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+body{
+	background: #F5F5F5;
+}
+.login{
+	width: 100%;
+	background: #fff;
+}
+.login_title{
+	width: inherit;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 16px;
+	border-bottom: 1px solid #ccc;
+}
+.verify_dialog{
+	width: inherit;
+	margin-top: 9px;
+	background: #fff;
+}
+.group_one{
+	width: inherit;
+	height: 50px;
+	padding: 1%;
+	border-bottom: 1px solid #ccc;
+	line-height: 50px;
+	font-size: 19px;
+}
+.group_one > label{
+	padding-left: 1%;
+}
+.group_one > input{
+	padding-left: 60px;
+	width: auto;
+	height: 25px;
+	line-height: 25px;	
+	font-size: 15px;
+}
+.group_two{
+	width: inherit;
+	height: 50px;
+	padding: 1%;
+	line-height: 50px;
+	font-size: 19px;
+}
+.group_two > label{
+	padding-left: 1%;
+}
+.group_two > input{
+	padding-left: 20px;
+	width: auto;
+	height: 25px;
+	line-height: 25px;	
+	font-size: 15px;
+}
+#submit{
+	margin-top: 5px;
+}

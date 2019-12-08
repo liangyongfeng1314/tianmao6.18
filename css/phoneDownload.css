@@ -1,0 +1,55 @@
+.border{
+	border: 1px solid springgreen;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	position: relative;
+	height: 100%;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.btn-group{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 200px;
+	align-items: center;
+	background-color: hsla(0,0%,100%,0.8);
+	z-index: 99;
+	-webkit-display: flex;
+	display: flex;
+	padding: .266667rem;
+}
+.btn{
+	position: relative;
+	width: 100%;
+	font-size:  .426667rem;
+	-webkit-box-flex: 1;
+	display: -webkit-flex;
+	display: flex;
+	height: 120px;
+	margin: 0 0.16rem;
+	border-radius: 2rem;	
+	-webkit-box-pack: left;
+	justify-content: left;
+	-webkit-box-align: center;
+	align-items: center;
+	background: -webkit-linear-gradient(270deg,#ff5000,#ff9000);
+	background: linear-gradient(270deg,#ff5000,#ff9000);
+}
+.icon-tao{
+	margin-left: -29px;
+}
+.btn span{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 3rem;
+}
+
